@@ -1,8 +1,8 @@
-import { parseFormInputs } from "../../lib/wordSearchHandler"
+import { parseWordSearchInput } from "../../lib/wordSearchHandler"
 
 
 export default function CrosswordGrid({ puzzle }) {
-    const grid = parseFormInputs(puzzle)
+    const grid = parseWordSearchInput(puzzle)
     console.log({grid})
     const gridRows = [];
     for (let rowIndex = 0; rowIndex < grid.length; rowIndex++) {
